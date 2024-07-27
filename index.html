@@ -7,19 +7,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/Music Player.png" type="image/png">
-
     <title>Music Player | TonyNguyen</title>
 </head>
 <body>
     <div class="background">
         <img src="" id="bg-img">
     </div>
-
     <div class="container">
-        <div class="sidebar">
+        <div class="sidebar" id="sidebar">
             <ul id="song-list"></ul>
         </div>
-        <div class="player">
+        <div class="player" id="player">
             <div class="player-img">
                 <img src="" class="active" id="cover">
             </div>
@@ -40,10 +38,30 @@
                 <i class="fa-solid fa-play play-button" title="Play" id="play"></i>
                 <i class="fa-solid fa-forward" title="Next" id="next"></i>
             </div>
+            
+            <!-- Volume control slider -->
+            <div class="volume-control">
+                <i class="fa-solid fa-volume-low" title="Volume"></i>
+                <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="100">
+                <i class="fa-solid fa-volume-high" title="Volume"></i>
+            </div>
+            <div class="button">
+                <button id="toggle-sidebar" title="Show Sidebar">
+                    <i class="fa-solid fa-bars"></i> 
+                </button>
+                <button id="toggle-connections" title="Show Connections">
+                    <i class="fa-solid fa-podcast"></i>
+                </button>
+                <button id="toggle-lyrics" title="Show Lyrics">
+                    <i class="fa-solid fa-quote-left"></i> 
+                </button>
+
+            </div>
         </div>
-        <div class="lyrics-container">
+        <div class="lyrics-container" id="lyrics-container">
             <div id="lyrics"></div>
         </div>
+      
     </div>
 
     <script src="index.js"></script>
