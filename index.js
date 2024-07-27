@@ -21,52 +21,88 @@ const songs = [
         cover: 'assets/1.jpg',
         artist: 'Sơn Tùng M-TP',
         lyrics: [
-            { time: 0, text: "Hình như trong lòng em đã không còn hình bóng ai ngoài anh đâu" },
-            { time: 10, text: "Hằng đêm em nằm thấu thức suy tư chẳng nhớ ai ngoài anh đâu" },
-            { time: 20, text: "Vậy nên không cần nói nữa yêu mà đòi nói trong vài ba câu" },
-            { time: 30, text: "Cứ cố quá đâm ra lại hầm, Ở đâu hết cả đau" },
-            { time: 40, text: "Đợi chờ anh trước nhà từ sáng đến trời chiều tối mật màn này luôn" },
-            { time: 50, text: "Ngược nắng hay là ngược gió biết em thấy anh tươi vui không buồn" },
-            { time: 60, text: "Chỉ cần thấy thế thôi mây xanh tràn hòa" },
-            { time: 70, text: "Thấy thế thôi vui hơn có quả" },
-            { time: 80, text: "Bước kế tiếp em lại gần hơn chút đó nha" },
-            { time: 90, text: "Rồi ngày ấy cuối cùng đã tìm đến ta nào đâu hay" },
-            { time: 100, text: "Em sẽ không để vụt mất đi cơ duyên ông trời trao tay" },
-            { time: 110, text: "Còn đất nước băn khoăn gì nữa, tiếp gần anh ấy" },
-            { time: 120, text: "Cố gắng sẽ không để anh nghi ngờ dù một giây lúc này" },
-            { time: 130, text: "Được đứng bên anh em hạnh phúc, tim loạn nhịp tung bay" },
-            { time: 140, text: "Chắc chắn em thề em sẽ không bao giờ quên ngày hôm nay" },
-            { time: 150, text: "Chính anh, chính anh tương tư mình anh thôi" },
-            { time: 160, text: "Mãi theo sau mình anh thôi" },
-            { time: 170, text: "Mãi si mê mình anh thôi" },
-            { time: 180, text: "Mãi yêu thương mình anh" },
-            { time: 190, text: "Vậy thì em xin chết vì người em thương" },
-            { time: 200, text: "Có biết bao nhiêu điều còn đang vấn vương" },
-            { time: 210, text: "Dành cho anh dành hết ân tình em mang một đời" },
-            { time: 220, text: "Đừng làm trái tim em đau" },
-            { time: 230, text: "Vậy thì em xin chết vì người em thương" },
-            { time: 240, text: "Có biết bao nhiêu điều còn đang vấn vương" },
-            { time: 250, text: "Dành cho anh dành hết ân tình em mang một đời" },
-            { time: 260, text: "Đừng làm trái tim em đau" },
-            { time: 270, text: "Ta nào đâu hay" },
-            { time: 280, text: "Em sẽ không để vụt mất đi cơ duyên ông trời trao tay" },
-            { time: 290, text: "Còn đánh đá băn khoăn gì nữa, tiếp cận anh ngay" },
-            { time: 300, text: "Cố gắng sao không để anh nghi ngờ dù một giây lúc này" },
-            { time: 310, text: "Được đứng bên anh em hạnh phúc, tim loạn nhịp tung bay" },
-            { time: 320, text: "Chắc chắn em thề em sẽ không bao giờ quên ngày hôm nay" },
-            { time: 330, text: "Chính anh, chính anh tương tư mình anh thôi" },
-            { time: 340, text: "Mãi theo sau mình anh thôi" },
-            { time: 350, text: "Mãi si mê mình anh thôi" },
-            { time: 360, text: "Mãi yêu thương mình anh" },
-            { time: 370, text: "Vậy thì em xin chết vì người em thương" },
-            { time: 380, text: "Có biết bao nhiêu điều còn đang vấn vương" },
-            { time: 390, text: "Dành cho anh dành hết ân tình em mang một đời" },
-            { time: 400, text: "Đừng làm trái tim em đau" },
-            { time: 410, text: "Vậy thì em xin chết vì người em thương" },
-            { time: 420, text: "Có biết bao nhiêu điều còn đang vấn vương" },
-            { time: 430, text: "Dành cho anh dành hết ân tình em mang một đời" },
-            { time: 440, text: "Đừng làm trái tim em đau" },
-            { time: 450, text: "Thì ra chính em đơn phương làm lời bài hát chạy theo nhạc" }
+            { time: 46, text: "Hình như trong lòng anh đã không còn hình bóng ai ngoài em đâu" },
+            { time: 50, text: "Hằng đêm, anh nằm thao thức suy tư chẳng nhớ ai ngoài em đâu" },
+            { time: 54, text: "Vậy nên không cần nói nữa, yêu mà đòi nói trong vài ba câu" },
+            { time: 58, text: "Cứ cố quá đâm ra lại hâm… Uh, đau hết cả đầu!" },
+            { time: 62, text: "Đợi chờ em trước nhà từ sáng đến trưa chiều tối, mắc màn đây luôn" },
+            { time: 65, text: "Ngược nắng hay là ngược gió miễn anh thấy em tươi vui không buồn" },
+            { time: 69, text: "Chỉ cần có thấy thế thôi mây xanh chan hoà" },
+            { time: 71, text: "Thấy thế thôi vui hơn có quà" },
+            { time: 73, text: "Và bước kế tiếp anh lại gần hơn chút đó nha" },
+            { time: 76, text: "Rồi ngày ấy cuối cùng đã tìm đến ta nào đâu hay" },
+            { time: 80, text: "Anh sẽ không để vụt mất đi cơ duyên ông trời trao tay" },
+            { time: 83, text: "Còn đắn đo băn khoăn gì nữa tiếp cận em ngay" },
+            { time: 87, text: "Cố gắng sao không để em nghi ngờ dù 1 giây lúc này" },
+            { time: 91, text: "Được đứng bên em anh hạnh phúc tim loạn nhịp tung bay" },
+            { time: 95, text: "Chắc chắn anh thề anh sẽ không bao giờ quên ngày hôm nay" },
+            { time: 99, text: "Chính em, chính em, tương tư mình em thôi" },
+            { time: 101, text: "Mãi theo sau mình em thôi" },
+            { time: 103, text: "Mãi si mê mình em thôi" },
+            { time: 105, text: "Mãi yêu thương mình em" },
+            { time: 107, text: "Vậy thì anh xin chết vì người anh thương" },
+            { time: 111, text: "Có biết bao nhiêu điều còn đang vấn vương" },
+            { time: 114, text: "Dành cho em dành hết ân tình anh mang một đời" },
+            { time: 119, text: "Đừng làm trái tim anh đau" },
+            { time: 122, text: "Vậy thì anh xin chết vì người anh thương" },
+            { time: 126, text: "Có biết bao nhiêu điều còn đang vấn vương" },
+            { time: 130, text: "Dành cho em dành hết ân tình anh mang một đời" },
+            { time: 134, text: "Đừng làm trái tim anh đau" },
+            { time: 138, text: "Tình cờ lọt vào" },
+            { time: 139, text: "Nụ cười ngọt ngào" },
+            { time: 140, text: "Anh thề không biết đường thoát ra làm sao" },
+            { time: 142, text: "Lựa một lời chào" },
+            { time: 143, text: "Phải thật là ngầu nào" },
+            { time: 144, text: "Nay tự dưng sao toàn mấy câu tào lao" },
+            { time: 146, text: "Lại gần một chút cho anh ngắm nhìn người vài phút, say trong cơn mơ thiên đàng" },
+            { time: 150, text: "Quên đi chuyện của nhân gian" },
+            { time: 152, text: "Hoà vào trăng sao tan theo miên man" },
+            { time: 153, text: "Nhiều lời rồi đấy nhé" },
+            { time: 154, text: "Dài dòng rồi đấy nhé" },
+            { time: 155, text: "Rồi cứ thế" },
+            { time: 156, text: "Vòng lặp lại cứ thế" },
+            { time: 157, text: "Lại bối rối" },
+            { time: 158, text: "Không xong là đến tối" },
+            { time: 159, text: "Nói luôn đi: “Đời này chỉ cần mình em thôi”" },
+            { time: 161, text: "Giấu hết nhớ nhung sâu trong lời nhạc" },
+            { time: 163, text: "Nối tiếp những áng thơ ngô nghê rời rạc" },
+            { time: 165, text: "Viết lên chuyện đôi ta vào một ngày không xa, ngày về chung một nhà" },
+            { time: 168, text: "Rồi ngày ấy cuối cùng đã tìm đến ta nào đâu hay" },
+            { time: 171, text: "Anh sẽ không để vụt mất đi cơ duyên ông trời trao tay" },
+            { time: 175, text: "Còn đắn đo băn khoăn gì nữa tiếp cận em ngay" },
+            { time: 179, text: "Cố gắng sao không để em nghi ngờ dù 1 giây lúc này" },
+            { time: 183, text: "Được đứng bên em anh hạnh phúc tim loạn nhịp tung bay" },
+            { time: 187, text: "Chắc chắn anh thề anh sẽ không bao giờ quên ngày hôm nay" },
+            { time: 190, text: "Chính em, chính em, tương tư mình em thôi" },
+            { time: 193, text: "Mãi theo sau mình em thôi" },
+            { time: 195, text: "Mãi si mê mình em thôi" },
+            { time: 196, text: "Mãi yêu thương mình em" },
+            { time: 199, text: "Vậy thì anh xin chết vì người anh thương" },
+            { time: 202, text: "Có biết bao nhiêu điều còn đang vấn vương" },
+            { time: 206, text: "Dành cho em dành hết ân tình anh mang một đời" },
+            { time: 211, text: "Đừng làm trái tim anh đau" },
+            { time: 214, text: "Vậy thì anh xin chết vì người anh thương" },
+            { time: 218, text: "Có biết bao nhiêu điều còn đang vấn vương" },
+            { time: 222, text: "Dành cho em dành hết ân tình anh mang một đời" },
+            { time: 226, text: "Đừng làm trái tim anh đau" },
+            { time: 230, text: "Vậy thì anh xin chết vì người anh thương" },
+            { time: 234, text: "Có biết bao nhiêu điều còn đang vấn vương" },
+            { time: 238, text: "Dành cho em dành hết ân tình anh mang một đời" },
+            { time: 242, text: "Đừng làm trái tim anh đau" },
+            { time: 246, text: "Vậy thì anh xin chết vì người anh thương" },
+            { time: 250, text: "Có biết bao nhiêu điều còn đang vấn vương" },
+            { time: 254, text: "Dành cho em dành hết ân tình anh mang một đời" },
+            { time: 258, text: "Đừng làm trái tim anh đau" },
+            { time: 262, text: "La la la la, la la la la la la la" },
+            { time: 266, text: "La la la la, la la la la la la la" },
+            { time: 270, text: "La la la la, la la la la la la la" },
+            { time: 274, text: "Đừng làm trái tim anh đau" },
+            { time: 278, text: "One more time (x3)" },
+            { time: 280, text: "La la la la, la la la la la la la" },
+            { time: 284, text: "La la la la, la la la la la la la" },
+            { time: 287, text: "(Son Tung M-TP)" },
+            { time: 289, text: "La la la la, la la la la la la la" },
+            { time: 291, text: "Đừng làm trái tim anh đau" }
         ]
     },
     {
@@ -75,36 +111,40 @@ const songs = [
         cover: 'assets/2.jpg',
         artist: 'Kiều Chi (Cover)',
         lyrics: [
-            { time: 0, text: "Dáng ai dần xa xôi sánh vai người ta rồi" },
-            { time: 5, text: "Trái tim vỡ ra làm đôi em hứa mãi bên anh mà" },
-            { time: 10, text: "Tình đẹp là tình dang dở toàn làm người ta ngỡ" },
-            { time: 15, text: "Ngỡ đâu lâu dài ngỡ bên nhau hoài" },
-            { time: 20, text: "Tiếng ai vọng bên tai có phải người quay lại" },
-            { time: 25, text: "Cứ ngày rồi đêm mong đợi trong lẻ loi vô vọng" },
-            { time: 30, text: "Tình đẹp là tình dang dở toàn làm người ta ngỡ" },
-            { time: 35, text: "Ngỡ không chia rời ngỡ đâu cả đời" },
-            { time: 40, text: "Chờ người từ lúc nắng dần buông mưa trên cao vẫn cứ thế tuôn y như đang khóc thế nỗi buồn" },
-            { time: 50, text: "Không cách nào để quên được đi em uống càng say thì lại càng nhớ thêm hey" },
-            { time: 60, text: "Đời người được có mấy lần yêu nên đâu biết trước có bao điều khiến ta đau đớn rất rất nhiều" },
-            { time: 70, text: "Cẩm tú cầu người thường nâng niu hon héo dần từ ngày em đi" },
-            { time: 80, text: "Từng là bầu trời đầy nắng mà giờ mờ mịt mờ mây giăng" },
-            { time: 90, text: "Đứng dưới ánh trăng tâm tình cùng kí ức vĩnh hằng" },
-            { time: 100, text: "Người xưa có nhớ về nhau không choàng tay ôm lấy mỗi khi đông" },
-            { time: 110, text: "Vai tựa vai môi kề môi thay lời nói" },
-            { time: 120, text: "Từng là chuyện tình rực rỡ tàn cuộc lại về chơ vơ" },
-            { time: 130, text: "Tỉnh thức giữa cơn mơ anh lại cuồng điên như gã khờ" },
-            { time: 140, text: "Người đang yên giấc nồng bên ai ở đây mưa gió vẫn chưa phai" },
-            { time: 150, text: "Qua ngày mai câu chuyện xưa xin cất lại" },
-            { time: 160, text: "Chờ người từ lúc nắng dần buông mưa trên cao vẫn cứ thế tuôn y như đang khóc thế nỗi buồn" },
-            { time: 170, text: "Không cách nào để quên được đi em uống càng say thì lại càng nhớ thêm hey" },
-            { time: 180, text: "Đời người được có mấy lần yêu nên đâu biết trước có bao điều khiến ta đau đớn rất rất nhiều" },
-            { time: 190, text: "Cẩm tú cầu người thường nâng niu hon héo dần từ ngày em đi" },
-            { time: 200, text: "Chờ người từ lúc nắng dần buông mưa trên cao vẫn cứ thế tuôn y như đang khóc thế nỗi buồn" },
-            { time: 210, text: "Không cách nào để quên được đi em uống càng say thì lại càng nhớ thêm hey" },
-            { time: 220, text: "Đời người được có mấy lần yêu nên đâu biết trước có bao điều khiến ta đau đớn rất rất nhiều" },
-            { time: 230, text: "Cẩm tú cầu người thường nâng niu hon héo dần từ ngày em đi" },
-            { time: 240, text: "Đời người được có mấy lần yêu nên đâu biết trước có bao điều khiến ta đau đớn rất rất nhiều" },
-            { time: 250, text: "Cẩm tú cầu người thường nâng niu hon héo dần từ ngày em đi" }
+            { time: 2, text: "Dáng ai dần xa xôi sánh vai người ta" },
+            { time: 9, text: "Rồi trái tim vỡ ra làm đôi anh hứa mãi" },
+            { time: 15, text: "Bên em mà tình đẹp là tình dang dở toàn làm" },
+            { time: 23, text: "Người ta ngỡ ngàng đâu lâu dài" },
+            { time: 30, text: "Ngỡ bên nhau hoài tiếng ai vọng bên tai có phải người" },
+            { time: 40, text: "Quay lại cứ ngày rồi đêm mong đợi trong" },
+            { time: 47, text: "Lẻ loi vô vọng tình đẹp là tình dang dở toàn làm người ta ngỡ" },
+            { time: 53, text: "Dở toàn làm người ta ngỡ ngỡ không chia rời" },
+            { time: 61, text: "Ngỡ đâu cả đời chờ người từ lúc nắng dần buông mưa" },
+            { time: 69, text: "Trên cao vẫn cứ thế tuôn y như đang khóc thế nỗi buồn không cách nào để quên" },
+            { time: 76, text: "Được đi anh uống càng say thì lại càng nhớ" },
+            { time: 82, text: "Thêm đời người được có mấy lần yêu nên đâu biết trước có bao điều khiến ta đau" },
+            { time: 88, text: "Đau rất nhiều cẩm tú cầu người thường nâng niu hôn héo dần từng ngày" },
+            { time: 96, text: "Anh đi từng là bầu trời đầy nắng mà giờ mịt" },
+            { time: 103, text: "Mở mây xám đứng dưới hàng trắng thâm tình cùng ký ức vĩnh hằng người xưa có" },
+            { time: 110, text: "Nhớ về nhau không choàng tay ôm lấy mỗi khi đông vai tựa vai môi kề môi thay lời" },
+            { time: 115, text: "Nói từng là chuyện tình rực rỡ tàn cuộc lại về cho vỡ tỉnh thức giữa cơn mơ em" },
+            { time: 122, text: "Lại cuồng điếng như kẻ khờ người đang yên rất nồng bên ai ở đây mưa gió vẫn" },
+            { time: 128, text: "Chưa phải qua ngày mai câu chuyện xưa xin cất lại" },
+            { time: 150, text: "Chờ người từ lúc nắng dần buông mưa trên cao vẫn cứ thế tuôn y như đang khóc thế" },
+            { time: 156, text: "Nỗi buồn không cách nào để quên được đi anh uống càng say thì lại càng nhớ" },
+            { time: 166, text: "Thêm đời người được có mấy lần yêu nên đâu biết trước có bao điều khiến ta đau" },
+            { time: 172, text: "Đau rất nhiều ôi cẩm tú cầu người thường nâng niu hôn héo dần từng ngày" },
+            { time: 180, text: "Anh đi từ bầu trời đầy nắng mà giờ mịt mở mây xám đứng dưới hàng trắng thâm tình" },
+            { time: 188, text: "Cùng ký ức vĩnh hằng người xưa có nhớ về nhau không choàng tay ôm lấy mỗi khi" },
+            { time: 194, text: "Đau vậy tựa vai môi kề môi thay lời nói từng là chuyện tình rực rỡ tàn cuộc lại" },
+            { time: 201, text: "Về cho vỡ tỉnh thức giữa cơn mơ em lại cuồng điếng như kẻ khờ người đang yên" },
+            { time: 207, text: "Rất nồng bên ai ở đây mưa gió vẫn chưa phải qua ngày mai câu chuyện xưa xin cất" },
+            { time: 213, text: "Em vẫn chẳng muốn tin rằng cho đến cuối cùng dừng chân kết thúc lại là" },
+            { time: 221, text: "Người dưng chúng ta vô tình gặp rồi thương" },
+            { time: 226, text: "Nhau để rồi niềm đau về sau đừng là bầu trời đầy đắng mà giờ mịt mở mây xám" },
+            { time: 235, text: "Đứng dưới ánh trăng tâm tình cùng ký ức vĩnh hằng người đang yên giấc nồng bên" },
+            { time: 241, text: "Ai từ đây mưa gió vẫn chưa phải qua ngày mai câu chuyện xưa xin cất lại" },
+            { time: 253, text: "Xin cất lại" }
         ]
     },
     {
@@ -321,4 +361,173 @@ songs.forEach((song, index) => {
     });
     songList.appendChild(li);
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const volumeSlider = document.getElementById('volume-slider');
+
+    volumeSlider.addEventListener('input', () => {
+        music.volume = volumeSlider.value;
+    });
+});
+
+// Xử lý nút hiện/ẩn sidebar
+document.getElementById('toggle-sidebar').addEventListener('click', function() {
+    var sidebar = document.getElementById('sidebar');
+    var player = document.getElementById('player');
+    var lyricsContainer = document.getElementById('lyrics-container');
+
+    // Nếu sidebar đang ẩn hoặc không có kiểu hiển thị cụ thể
+    if (sidebar.style.display === 'none' || sidebar.style.display === '') {
+        sidebar.style.display = 'block'; // Hiện sidebar
+        player.style.display = 'none';   // Ẩn player
+        lyricsContainer.style.display = 'none'; // Ẩn lời bài hát
+        this.querySelector('i').classList.replace('fa-list', 'fa-play'); // Thay đổi icon thành "X"
+        this.title = 'Hide Sidebar'; // Thay đổi tiêu đề của nút
+    } else {
+        sidebar.style.display = 'none';  // Ẩn sidebar
+        player.style.display = 'block';  // Hiện player
+        this.querySelector('i').classList.replace('fa-play', 'fa-list'); // Thay đổi icon thành "bars"
+        this.title = 'Show Sidebar'; // Thay đổi tiêu đề của nút
+    }
+});
+
+// Xử lý nút hiện/ẩn lời bài hát
+document.getElementById('toggle-lyrics').addEventListener('click', function() {
+    var lyricsContainer = document.getElementById('lyrics-container');
+    var sidebar = document.getElementById('sidebar');
+    var player = document.getElementById('player');
+    
+    // Nếu lyricsContainer đang ẩn hoặc không có kiểu hiển thị cụ thể
+    if (lyricsContainer.style.display === 'none' || lyricsContainer.style.display === '') {
+        lyricsContainer.style.display = 'block'; // Hiện lời bài hát
+        sidebar.style.display = 'none'; // Ẩn sidebar
+        player.style.display = 'none';  // Ẩn player
+        this.querySelector('i').classList.replace('fa-quote-left', 'fa-quote-right'); // Thay đổi icon thành "quote-right"
+        this.title = 'Hide Lyrics'; // Thay đổi tiêu đề của nút
+    } else {
+        lyricsContainer.style.display = 'none';  // Ẩn lời bài hát
+        player.style.display = 'block';  // Hiện player
+        this.querySelector('i').classList.replace('fa-quote-right', 'fa-quote-left'); // Thay đổi icon thành "quote-left"
+        this.title = 'Show Lyrics'; // Thay đổi tiêu đề của nút
+    }
+});
+
+
+
+var touchStartX = null;
+var touchStartY = null;
+
+// Hàm xử lý bắt đầu chạm
+function handleTouchStart(event) {
+    const firstTouch = event.touches[0];
+    touchStartX = firstTouch.clientX;
+    touchStartY = firstTouch.clientY;
+}
+
+// Hàm xử lý di chuyển chạm
+function handleTouchMove(event) {
+    if (!touchStartX || !touchStartY) {
+        return;
+    }
+
+    const touchEndX = event.touches[0].clientX;
+    const touchEndY = event.touches[0].clientY;
+
+    const diffX = touchStartX - touchEndX;
+    const diffY = touchStartY - touchEndY;
+
+    // Kiểm tra xem cử chỉ là lướt ngang hay không (ưu tiên lướt ngang)
+    if (Math.abs(diffX) > Math.abs(diffY)) {
+        if (diffX > 0) {
+            // Lướt sang trái
+            if (document.getElementById('player').style.display === 'block') {
+                showLyricsContainer();
+            } else if (document.getElementById('sidebar').style.display === 'block') {
+                showPlayer();
+            }
+        } else {
+            // Lướt sang phải
+            if (document.getElementById('player').style.display === 'block') {
+                showSidebar();
+            } else if (document.getElementById('lyrics-container').style.display === 'block') {
+                showPlayer();
+            }
+        }
+    }
+
+    // Đặt lại giá trị ban đầu
+    touchStartX = null;
+    touchStartY = null;
+}
+
+// Hàm hiển thị player
+function showPlayer() {
+    var sidebar = document.getElementById('sidebar');
+    var player = document.getElementById('player');
+    var lyricsContainer = document.getElementById('lyrics-container');
+
+    sidebar.style.display = 'none'; // Ẩn sidebar
+    player.style.display = 'block'; // Hiện player
+    lyricsContainer.style.display = 'none'; // Ẩn lyrics
+    document.getElementById('toggle-sidebar').querySelector('i').classList.replace('fa-times', 'fa-bars'); // Thay đổi icon
+    document.getElementById('toggle-sidebar').title = 'Show Sidebar'; // Thay đổi tiêu đề của nút
+    document.getElementById('toggle-lyrics').querySelector('i').classList.replace('fa-quote-right', 'fa-quote-left'); // Thay đổi icon
+    document.getElementById('toggle-lyrics').title = 'Show Lyrics'; // Thay đổi tiêu đề của nút
+}
+
+// Hàm hiển thị sidebar
+function showSidebar() {
+    var sidebar = document.getElementById('sidebar');
+    var player = document.getElementById('player');
+    var lyricsContainer = document.getElementById('lyrics-container');
+
+    sidebar.style.display = 'block'; // Hiện sidebar
+    player.style.display = 'none';   // Ẩn player
+    lyricsContainer.style.display = 'none'; // Ẩn lyrics
+    document.getElementById('toggle-sidebar').querySelector('i').classList.replace('fa-bars', 'fa-times'); // Thay đổi icon
+    document.getElementById('toggle-sidebar').title = 'Hide Sidebar'; // Thay đổi tiêu đề của nút
+}
+
+// Hàm hiển thị lyricsContainer
+function showLyricsContainer() {
+    var lyricsContainer = document.getElementById('lyrics-container');
+    var sidebar = document.getElementById('sidebar');
+    var player = document.getElementById('player');
+
+    lyricsContainer.style.display = 'block'; // Hiện lyricsContainer
+    sidebar.style.display = 'none'; // Ẩn sidebar
+    player.style.display = 'none';  // Ẩn player
+    document.getElementById('toggle-lyrics').querySelector('i').classList.replace('fa-quote-left', 'fa-quote-right'); // Thay đổi icon
+    document.getElementById('toggle-lyrics').title = 'Hide Lyrics'; // Thay đổi tiêu đề của nút
+}
+
+// // Thêm sự kiện cảm ứng vào player
+// var playerElement = document.getElementById('player');
+// playerElement.addEventListener('touchstart', handleTouchStart, false);
+// playerElement.addEventListener('touchmove', handleTouchMove, false);
+
+// Thêm sự kiện cảm ứng vào sidebar
+var sidebarElement = document.getElementById('sidebar');
+sidebarElement.addEventListener('touchstart', handleTouchStart, false);
+sidebarElement.addEventListener('touchmove', handleTouchMove, false);
+
+// Thêm sự kiện cảm ứng vào lyricsContainer
+var lyricsContainerElement = document.getElementById('lyrics-container');
+lyricsContainerElement.addEventListener('touchstart', handleTouchStart, false);
+lyricsContainerElement.addEventListener('touchmove', handleTouchMove, false);
+
+// Đặt trạng thái mặc định khi tải trang
+document.addEventListener('DOMContentLoaded', function() {
+    var sidebar = document.getElementById('sidebar');
+    var player = document.getElementById('player');
+    var lyricsContainer = document.getElementById('lyrics-container');
+
+    // Đảm bảo các phần tử bắt đầu ở trạng thái chính xác
+    sidebar.style.display = 'none';
+    player.style.display = 'block';
+    lyricsContainer.style.display = 'none';
+});
+
+
+
 
