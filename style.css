@@ -112,19 +112,20 @@ body {
     opacity: 1;
 }
 
-h2, h3 {
-    text-align: center;
-    margin: 10px 0;
-}
+
 
 h2 {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
+    text-align: center;
+    margin: 24px 0 0;
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
+    text-align: center;
+    margin: 10px 0;
 }
 
 .player-progress {
@@ -154,11 +155,11 @@ h3 {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 10px;
+    margin: 20px 0px 20px;
 }
 
 .fa-solid {
-    font-size: 30px;
+    font-size: 24px;
     color: #666;
     margin: 0 15px;
     cursor: pointer;
@@ -171,7 +172,7 @@ h3 {
 }
 
 .play-button {
-    font-size: 44px;
+    font-size: 34px;
 }
 
 .lyrics-container {
@@ -179,8 +180,7 @@ h3 {
     padding: 10px;
     scrollbar-width: thin; /* Cho Firefox: thanh cuộn mỏng */
     scrollbar-color: transparent transparent; /* Cho Firefox: thanh cuộn trong suốt */
-    border-radius: 10px ;
-    margin-left: 10px;
+    border-radius: 25px ;
 }
 
 /* Cho Chrome, Safari và Edge */
