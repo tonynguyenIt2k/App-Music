@@ -242,6 +242,7 @@ let isPlaying = false;
 
 function playMusic() {
     isPlaying = true;
+    image.classList.add('active1');
     playBtn.classList.replace('fa-play', 'fa-pause');
     playBtn.setAttribute('title', 'Pause');
     music.play();
@@ -249,6 +250,7 @@ function playMusic() {
 
 function pauseMusic() {
     isPlaying = false;
+    image.classList.remove('active1');
     playBtn.classList.replace('fa-pause', 'fa-play');
     playBtn.setAttribute('title', 'Play');
     music.pause();
