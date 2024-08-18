@@ -39,12 +39,11 @@ body {
 }
 
 .container {
-    display: flex;
+    display: block;
     width: 314px;
-    height: 500px;
-    background-color: #e7e7e7;
+    height: 548px;
     border-radius: 20px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 1);
     transition: all 0.5s ease;
 }
 
@@ -61,31 +60,34 @@ body {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    height: 354px;
 }
 
 #song-list li {
+    color:#fff;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 15px;
     font-weight: bold;
     cursor: pointer;
-    background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 #song-list li:hover {
-    background-color: #ddd;
+    background-color: rgba(0, 0, 0, 0.3);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .player {
-    display: fixed;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    background: #fff;
     border-radius: 25px;
     height: fit-content;
+}
+.head-player {
+    height: 374px;
 }
 
 .player-img {
@@ -99,8 +101,8 @@ body {
 .player-img img {
     object-fit: cover;
     border-radius: 20px;
-    height: 100%;
-    width: 100%;
+    height: 80%;
+    width: 80%;
     opacity: 0;
 }
 
@@ -112,33 +114,38 @@ body {
     opacity: 1;
 }
 
+.player-img img.active1 {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
 
 
 h2 {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
-    text-align: center;
     margin: 24px 0 0;
+    color:#fff;
 }
 
 h3 {
     font-size: 16px;
-    font-weight: 500;
-    text-align: center;
-    margin: 10px 0;
+    font-weight: 300;
+    margin: 4px 0;
+    color:#fff;
 }
 
 .player-progress {
     background-color: #ddd;
     border-radius: 5px;
     cursor: pointer;
-    margin: 20px 0;
-    height: 6px;
+    height: 3px;
     width: 100%;
+    color:#cecece;
 }
 
 .progress {
-    background-color: #212121;
+    background-color: #f5f5f5;
     border-radius: 5px;
     height: 100%;
     width: 0%;
@@ -155,16 +162,28 @@ h3 {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 20px 0px 20px;
+    margin: 26px 0px 26px;
+}
+
+span#current-time {
+    font-size: 10px;
+    margin: 3px 0px 0px ;
+}
+
+span#duration{
+    font-size: 10px;
+    margin: 3px 0px 0px ;
 }
 
 .fa-solid {
-    font-size: 24px;
+    font-size: 22px;
     color: #666;
     margin: 0 15px;
     cursor: pointer;
     user-select: none;
     transition: all 0.3s ease;
+    color:#fff;
+    margin:0px 24px 0px;
 }
 
 .fa-solid:hover {
@@ -172,15 +191,17 @@ h3 {
 }
 
 .play-button {
-    font-size: 34px;
+    font-size: 32px;
 }
 
 .lyrics-container {
+    height: 354px;
     overflow-y: auto; /* Cho phép cuộn dọc */
     padding: 10px;
     scrollbar-width: thin; /* Cho Firefox: thanh cuộn mỏng */
     scrollbar-color: transparent transparent; /* Cho Firefox: thanh cuộn trong suốt */
     border-radius: 25px ;
+    background-color:transparent;
 }
 
 /* Cho Chrome, Safari và Edge */
@@ -209,14 +230,14 @@ h3 {
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    background-color: #fff;
     text-align: center;
+    color:#cecece;
 }
 
 .lyrics-container p.active {
     opacity: 1;
     font-weight: bold;
-    color: #000;
+    color: #fff;
 }
 
 .volume-control {
@@ -228,7 +249,7 @@ h3 {
 
 .volume-control i {
     margin: 0 10px;
-    font-size: 12px;
+    font-size: 8px;
 }
 
 #volume-slider {
@@ -236,7 +257,7 @@ h3 {
     border-radius: 5px;
     cursor: pointer;
     margin: 10px 0;
-    height: 6px;
+    height: 3px;
     width: 90%;
 }
 
@@ -268,7 +289,7 @@ h3 {
     display: none; 
 }
 .player {
-    display: block; 
+    display:block; 
 }
 .lyrics-container {
     display: none; 
