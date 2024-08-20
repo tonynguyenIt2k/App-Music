@@ -367,9 +367,35 @@ songs.forEach((song, index) => {
 document.addEventListener('DOMContentLoaded', () => {
     const volumeSlider = document.getElementById('volume-slider');
 
+    const updateSliderBackground = () => {
+        const value = volumeSlider.value * 100;
+        volumeSlider.style.background = `linear-gradient(to right, #fff ${value}%, #ffffff59 ${value}%)`;
+    };
+
+    // Khi người dùng thay đổi giá trị trên thanh trượt
     volumeSlider.addEventListener('input', () => {
-        music.volume = volumeSlider.value;
+        music.volume = volumeSlider.value; // Cập nhật âm lượng dựa trên giá trị của thanh trượt
+        updateSliderBackground(); // Cập nhật màu nền của thanh trượt
     });
+
+     // Hiệu ứng 3D Touch giả lập
+     volumeSlider.addEventListener('mousedown', () => {
+        volumeSlider.style.transform = 'scale(1.1)';
+        volumeSlider.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.3)';
+    });
+
+    volumeSlider.addEventListener('mouseup', () => {
+        volumeSlider.style.transform = 'scale(1)';
+        volumeSlider.style.boxShadow = 'none';
+    });
+
+    volumeSlider.addEventListener('mouseleave', () => {
+        volumeSlider.style.transform = 'scale(1)';
+        volumeSlider.style.boxShadow = 'none';
+    });
+
+    // Cập nhật màu nền thanh trượt khi trang được tải
+    updateSliderBackground();
 });
 
 // Xử lý nút hiện/ẩn sidebar
