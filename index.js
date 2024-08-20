@@ -556,6 +556,20 @@ document.addEventListener('DOMContentLoaded', function() {
     lyricsContainer.style.display = 'none';
 });
 
+    // Vô hiệu hóa menu chuột phải
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
+
+    // Vô hiệu hóa hành động sao chép
+    document.addEventListener('copy', function(e) {
+        e.preventDefault();
+    });
+
+    // Vô hiệu hóa chọn văn bản
+    document.addEventListener('selectstart', function(e) {
+        e.preventDefault();
+    });
 
 
 
